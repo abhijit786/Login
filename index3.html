@@ -1,0 +1,201 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Kodinger">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>My Login Page</title>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+
+        </head>
+        <style>
+
+    .bg { 
+      /* The image used */
+      background-image: url("img/firstBG.jpg");
+        height:100vh;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    /**
+     * Demo Styles
+     */
+
+    html {
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      position: relative;
+      margin: 0;
+      padding-bottom: 6rem;
+      min-height: 100%;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+        font-size: small;
+    }
+
+
+    /**
+     * Footer Styles
+     */
+
+    .footer {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      background-color: #efefef;
+      text-align: center;
+    }
+    .navbar-brand img
+    {
+        height:30px;
+        width:140px;
+
+    }
+ 
+            
+    @media only screen and (min-width: 500px) {
+    #logincard{
+        width: 350px;
+    }
+    #logincarddiv
+    {
+        margin-top:5rem!important;        
+    }
+    }
+
+    @media only screen and (min-width: 760px) {
+
+    #logincarddiv
+    {
+        margin-top:5rem!important;        
+    }
+    }
+        </style>
+
+    <body class="bg animated fadeIn">
+        
+    <div class="container-fluid" style="padding:0" >
+
+             <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+        <img src="img/logo_blue.png" class="d-inline-block align-top" alt="">
+        DCMS
+        </a>
+        </nav>
+
+
+        <div class="row" style="margin: 0">
+
+            <div class="col-md-4"></div>
+                <div class="col-md-4 mt-5" id="logincarddiv">
+
+    <!-- Card -->
+    <div class="card mx-auto" id="logincard">
+
+
+
+      <!-- Card content -->
+      <div class="card-body">
+
+                                     <div class="text-center" style="padding-bottom:15px"><img class="img-fluid" src="img/logo_blue.png" /></div>
+
+                                <h4 class="text-center card-title ">DCMS Login</h4>
+                                <div class="alert alert-danger alert-dismissible fade show" style="padding-right: 3rem;" role="alert">
+        <strong><i class="fas fa-exclamation-triangle"></i> </strong> You have entered invalid username or Password
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+                                <form method="POST" class="my-login-validation" novalidate="">
+                                    <div class="form-group">
+                                        <label for="email">Memoid</label>
+                                        <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+                                        <div class="invalid-feedback">
+                                            Email is invalid
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+
+                                        <input id="password" type="password" class="form-control" name="password" required data-eye>
+                                        <div class="invalid-feedback">
+                                            Password is required
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="custom-checkbox custom-control">
+                                            <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+                                            <label for="remember" class="custom-control-label">Remeber Me</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group m-0">
+                                        <button type="submit" class="btn btn-primary btn-block rounded">
+                                            Login
+                                        </button>
+                                    </div>
+
+                                </form>
+
+      </div>
+
+    </div>
+    <!-- Card -->
+
+            </div>
+            <div class="col-md-4"></div>
+
+
+        </div>
+
+
+
+
+    <div class="footer black text-white"> <!-- Copyright -->
+      <div class="footer-copyright text-center">© 2018 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> Diligenta</a>
+      </div>
+      <!-- Copyright -->
+
+    </div>
+
+
+
+    </div>
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+        <script src="js/my-login.js"></script>
+
+
+
+
+        </body>
+        </html>
